@@ -53,7 +53,7 @@ static CWWeatherBugClient *weatherBugClient;
     
     [PCHTTPClient get: [weatherBugClient url]
            parameters: forecastRequestParameters
-            withBlock: forecastRequestResponseBlock];
+      responseHandler: forecastRequestResponseBlock];
 }
 
 + (void)hourlyForecastsForLocation:(CLLocation *)location forNumberOfHours:(NSInteger)numberOfHours completion:(CWForecastCompletionBlock)completion
@@ -73,7 +73,7 @@ static CWWeatherBugClient *weatherBugClient;
     
     [PCHTTPClient get: [weatherBugClient url]
            parameters: forecastRequestParameters
-            withBlock: forecastRequestResponseBlock];
+      responseHandler: forecastRequestResponseBlock];
 }
 
 @end
