@@ -13,6 +13,7 @@
 #import "CWForecaster.h"
 
 #import "NSDate+CWSeasons.h"
+#import "NSDate+CWSunPositions.h"
 #import "NSString+CWHashing.h"
 
 #import "PCHTTP.h"
