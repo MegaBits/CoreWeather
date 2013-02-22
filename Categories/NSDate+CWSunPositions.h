@@ -13,12 +13,16 @@
 
 #pragma mark - Accessor
 /*!
- *  DOCME
+ *  Returns the time, on this date, of the sunrise at the given location.
+ *  @param location The location for which to calculate sunrise.
+ *  @result The time, on thisdate, of the sunrise at the given location.
  */
 - (NSDate *)sunriseTimeAtLocation:(CLLocation *)location;
 
 /*!
- *  DOCME
+ *  Returns the time, on this date, of the sunset at the given location.
+ *  @param location The location for which to calculate sunset.
+ *  @result The time, on thisdate, of the sunset at the given location.
  */
 - (NSDate *)sunsetTimeAtLocation:(CLLocation *)location;
 
