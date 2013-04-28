@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7343E2F8172CC37E00C683E9 /* CLLocation+SunriseSunset.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E2F6172CC37E00C683E9 /* CLLocation+SunriseSunset.m */; };
+		7343E337172CC4CA00C683E9 /* PCHTTPBatchClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E2FF172CC4CA00C683E9 /* PCHTTPBatchClient.m */; };
+		7343E338172CC4CA00C683E9 /* PCHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E301172CC4CA00C683E9 /* PCHTTPClient.m */; };
+		7343E339172CC4CA00C683E9 /* PCHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E303172CC4CA00C683E9 /* PCHTTPResponse.m */; };
+		7343E33A172CC4CA00C683E9 /* PCHTTPSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E305172CC4CA00C683E9 /* PCHTTPSerializer.m */; };
+		7343E359172CC87700C683E9 /* CWClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E358172CC87700C683E9 /* CWClient.m */; };
+		736630A8172D73C900BE4DCF /* NSDate+CWSeasons.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415F416D493BB00C6CDDF /* NSDate+CWSeasons.m */; };
+		736630A9172D73C900BE4DCF /* NSString+CWHashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415F616D493BB00C6CDDF /* NSString+CWHashing.m */; };
+		736630AA172D73DC00BE4DCF /* CWDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415F916D493BB00C6CDDF /* CWDailyForecast.m */; };
+		736630AB172D73DC00BE4DCF /* CWForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415FB16D493BB00C6CDDF /* CWForecast.m */; };
+		736630AC172D73DC00BE4DCF /* CWForecaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415FD16D493BB00C6CDDF /* CWForecaster.m */; };
+		736630AD172D73DC00BE4DCF /* CWHourlyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415FF16D493BB00C6CDDF /* CWHourlyForecast.m */; };
+		736630AE172D73DC00BE4DCF /* CWWeatherBugClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7374160116D493BB00C6CDDF /* CWWeatherBugClient.m */; };
+		736630B1172D754800BE4DCF /* CWOpenWeatherMapClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 736630B0172D754800BE4DCF /* CWOpenWeatherMapClient.m */; };
 		737415D016D4934C00C6CDDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737415CF16D4934C00C6CDDF /* UIKit.framework */; };
 		737415D216D4934C00C6CDDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737415D116D4934C00C6CDDF /* Foundation.framework */; };
 		737415D416D4934C00C6CDDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737415D316D4934C00C6CDDF /* CoreGraphics.framework */; };
@@ -19,10 +33,24 @@
 		737415E916D4934C00C6CDDF /* CoreWeatherTestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415E816D4934C00C6CDDF /* CoreWeatherTestsViewController.m */; };
 		737415EC16D4934C00C6CDDF /* CoreWeatherTestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737415EA16D4934C00C6CDDF /* CoreWeatherTestsViewController.xib */; };
 		7374161016D4A36000C6CDDF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7374160F16D4A36000C6CDDF /* CoreLocation.framework */; };
-		737BB5BD16D52BC500837135 /* NSDate+CWSunPositions.m in Sources */ = {isa = PBXBuildFile; fileRef = 737BB5BC16D52BC500837135 /* NSDate+CWSunPositions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7343E2F5172CC37E00C683E9 /* CLLocation+SunriseSunset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+SunriseSunset.h"; sourceTree = "<group>"; };
+		7343E2F6172CC37E00C683E9 /* CLLocation+SunriseSunset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+SunriseSunset.m"; sourceTree = "<group>"; };
+		7343E2FD172CC4CA00C683E9 /* PCHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTP.h; sourceTree = "<group>"; };
+		7343E2FE172CC4CA00C683E9 /* PCHTTPBatchClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPBatchClient.h; sourceTree = "<group>"; };
+		7343E2FF172CC4CA00C683E9 /* PCHTTPBatchClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPBatchClient.m; sourceTree = "<group>"; };
+		7343E300172CC4CA00C683E9 /* PCHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPClient.h; sourceTree = "<group>"; };
+		7343E301172CC4CA00C683E9 /* PCHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPClient.m; sourceTree = "<group>"; };
+		7343E302172CC4CA00C683E9 /* PCHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPResponse.h; sourceTree = "<group>"; };
+		7343E303172CC4CA00C683E9 /* PCHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPResponse.m; sourceTree = "<group>"; };
+		7343E304172CC4CA00C683E9 /* PCHTTPSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPSerializer.h; sourceTree = "<group>"; };
+		7343E305172CC4CA00C683E9 /* PCHTTPSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPSerializer.m; sourceTree = "<group>"; };
+		7343E357172CC87700C683E9 /* CWClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWClient.h; sourceTree = "<group>"; };
+		7343E358172CC87700C683E9 /* CWClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWClient.m; sourceTree = "<group>"; };
+		736630AF172D754800BE4DCF /* CWOpenWeatherMapClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWOpenWeatherMapClient.h; sourceTree = "<group>"; };
+		736630B0172D754800BE4DCF /* CWOpenWeatherMapClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWOpenWeatherMapClient.m; sourceTree = "<group>"; };
 		737415CC16D4934C00C6CDDF /* CoreWeatherTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreWeatherTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		737415CF16D4934C00C6CDDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		737415D116D4934C00C6CDDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,8 +83,6 @@
 		7374160116D493BB00C6CDDF /* CWWeatherBugClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWWeatherBugClient.m; sourceTree = "<group>"; };
 		7374160216D493BB00C6CDDF /* CoreWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreWeather.h; path = ../CoreWeather.h; sourceTree = "<group>"; };
 		7374160F16D4A36000C6CDDF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		737BB5BB16D52BC500837135 /* NSDate+CWSunPositions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CWSunPositions.h"; sourceTree = "<group>"; };
-		737BB5BC16D52BC500837135 /* NSDate+CWSunPositions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CWSunPositions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +100,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7343E2F3172CC37E00C683E9 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				7343E2FA172CC4CA00C683E9 /* PCHTTP */,
+				7343E2F4172CC37E00C683E9 /* CLLocation-SunriseSunset */,
+			);
+			name = Dependencies;
+			path = ../Dependencies;
+			sourceTree = "<group>";
+		};
+		7343E2F4172CC37E00C683E9 /* CLLocation-SunriseSunset */ = {
+			isa = PBXGroup;
+			children = (
+				7343E2F5172CC37E00C683E9 /* CLLocation+SunriseSunset.h */,
+				7343E2F6172CC37E00C683E9 /* CLLocation+SunriseSunset.m */,
+			);
+			path = "CLLocation-SunriseSunset";
+			sourceTree = "<group>";
+		};
+		7343E2FA172CC4CA00C683E9 /* PCHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				7343E2FC172CC4CA00C683E9 /* PCHTTP */,
+			);
+			path = PCHTTP;
+			sourceTree = "<group>";
+		};
+		7343E2FC172CC4CA00C683E9 /* PCHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				7343E2FD172CC4CA00C683E9 /* PCHTTP.h */,
+				7343E2FE172CC4CA00C683E9 /* PCHTTPBatchClient.h */,
+				7343E2FF172CC4CA00C683E9 /* PCHTTPBatchClient.m */,
+				7343E300172CC4CA00C683E9 /* PCHTTPClient.h */,
+				7343E301172CC4CA00C683E9 /* PCHTTPClient.m */,
+				7343E302172CC4CA00C683E9 /* PCHTTPResponse.h */,
+				7343E303172CC4CA00C683E9 /* PCHTTPResponse.m */,
+				7343E304172CC4CA00C683E9 /* PCHTTPSerializer.h */,
+				7343E305172CC4CA00C683E9 /* PCHTTPSerializer.m */,
+			);
+			path = PCHTTP;
+			sourceTree = "<group>";
+		};
 		737415C316D4934C00C6CDDF = {
 			isa = PBXGroup;
 			children = (
 				7374160F16D4A36000C6CDDF /* CoreLocation.framework */,
+				7343E2F3172CC37E00C683E9 /* Dependencies */,
 				737415F216D493BB00C6CDDF /* Categories */,
 				737415F716D493BB00C6CDDF /* Classes */,
 				7374160216D493BB00C6CDDF /* CoreWeather.h */,
@@ -139,8 +209,6 @@
 				737415F416D493BB00C6CDDF /* NSDate+CWSeasons.m */,
 				737415F516D493BB00C6CDDF /* NSString+CWHashing.h */,
 				737415F616D493BB00C6CDDF /* NSString+CWHashing.m */,
-				737BB5BB16D52BC500837135 /* NSDate+CWSunPositions.h */,
-				737BB5BC16D52BC500837135 /* NSDate+CWSunPositions.m */,
 			);
 			name = Categories;
 			path = ../Categories;
@@ -157,8 +225,12 @@
 				737415FD16D493BB00C6CDDF /* CWForecaster.m */,
 				737415FE16D493BB00C6CDDF /* CWHourlyForecast.h */,
 				737415FF16D493BB00C6CDDF /* CWHourlyForecast.m */,
+				7343E357172CC87700C683E9 /* CWClient.h */,
+				7343E358172CC87700C683E9 /* CWClient.m */,
 				7374160016D493BB00C6CDDF /* CWWeatherBugClient.h */,
 				7374160116D493BB00C6CDDF /* CWWeatherBugClient.m */,
+				736630AF172D754800BE4DCF /* CWOpenWeatherMapClient.h */,
+				736630B0172D754800BE4DCF /* CWOpenWeatherMapClient.m */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -234,7 +306,20 @@
 				737415DC16D4934C00C6CDDF /* main.m in Sources */,
 				737415E016D4934C00C6CDDF /* CoreWeatherTestsAppDelegate.m in Sources */,
 				737415E916D4934C00C6CDDF /* CoreWeatherTestsViewController.m in Sources */,
-				737BB5BD16D52BC500837135 /* NSDate+CWSunPositions.m in Sources */,
+				7343E2F8172CC37E00C683E9 /* CLLocation+SunriseSunset.m in Sources */,
+				7343E337172CC4CA00C683E9 /* PCHTTPBatchClient.m in Sources */,
+				7343E338172CC4CA00C683E9 /* PCHTTPClient.m in Sources */,
+				7343E339172CC4CA00C683E9 /* PCHTTPResponse.m in Sources */,
+				7343E33A172CC4CA00C683E9 /* PCHTTPSerializer.m in Sources */,
+				7343E359172CC87700C683E9 /* CWClient.m in Sources */,
+				736630A8172D73C900BE4DCF /* NSDate+CWSeasons.m in Sources */,
+				736630A9172D73C900BE4DCF /* NSString+CWHashing.m in Sources */,
+				736630AA172D73DC00BE4DCF /* CWDailyForecast.m in Sources */,
+				736630AB172D73DC00BE4DCF /* CWForecast.m in Sources */,
+				736630AC172D73DC00BE4DCF /* CWForecaster.m in Sources */,
+				736630AD172D73DC00BE4DCF /* CWHourlyForecast.m in Sources */,
+				736630AE172D73DC00BE4DCF /* CWWeatherBugClient.m in Sources */,
+				736630B1172D754800BE4DCF /* CWOpenWeatherMapClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

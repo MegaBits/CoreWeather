@@ -8,23 +8,24 @@
 
 #import "CWForecaster.h"
 #import "CoreWeather.h"
-#import "CWWeatherBugClient.h"
+#import "CWClient.h"
+#import "CWOpenWeatherMapClient.h"
 
 #pragma mark - Globals
-static CWWeatherBugClient *weatherBugClient;
+static CWClient *weatherClient;
 
 @implementation CWForecaster
 
 #pragma mark - Class Accessors
 + (NSString *)apiKey
 {
-    return [weatherBugClient apiKey];
+    return [weatherClient apiKey];
 }
 
 #pragma mark - Class Mutators
 + (void)setAPIKey:(NSString *)key
 {
-    [weatherBugClient setAPIKey: key];
+    [weatherClient setAPIKey: key];
 }
 
 #pragma mark - Initializers
@@ -32,13 +33,14 @@ static CWWeatherBugClient *weatherBugClient;
 {
     [super initialize];
     
-    weatherBugClient = [[CWWeatherBugClient alloc] initWithAPIKey: @""];
+    //weatherClient = [[CWWeatherBugClient alloc] initWithAPIKey: @""];
+    weatherClient = [[CWOpenWeatherMapClient alloc] init];
 }
 
 #pragma mark - Forecasters
 + (void)dailyForecastsForLocation:(CLLocation *)location forNumberOfDays:(NSInteger)numberOfDays completion:(CWForecastCompletionBlock)completion
 {
-    NSDictionary *forecastRequestParameters = [weatherBugClient parametersForForecastInLocation: location
+    NSDictionary *forecastRequestParameters = [weatherClient parametersForForecastInLocation: location
                                                                                    numberOfDays: numberOfDays
                                                                                   numberOfHours: -1
                                                                                   requestValues: CWForecasterRequestValueDescription | CWForecasterRequestValueTemperature];
@@ -47,31 +49,31 @@ static CWWeatherBugClient *weatherBugClient;
     {
         if (completion)
         {
-            completion([weatherBugClient dailyForecastsForResponse: response]);
+            completion([weatherClient dailyForecastsForResponse: response]);
         }
     };
     
-    [PCHTTPClient get: [weatherBugClient url]
+    [PCHTTPClient get: [weatherClient url]
            parameters: forecastRequestParameters
       responseHandler: forecastRequestResponseBlock];
 }
 
 + (void)hourlyForecastsForLocation:(CLLocation *)location forNumberOfHours:(NSInteger)numberOfHours completion:(CWForecastCompletionBlock)completion
 {
-    NSDictionary *forecastRequestParameters = [weatherBugClient parametersForForecastInLocation: location
-                                                                                   numberOfDays: 1
-                                                                                  numberOfHours: numberOfHours
-                                                                                  requestValues: CWForecasterRequestValueDescription | CWForecasterRequestValueTemperature];
+    NSDictionary *forecastRequestParameters = [weatherClient parametersForForecastInLocation: location
+                                                                                numberOfDays: 1
+                                                                               numberOfHours: numberOfHours
+                                                                               requestValues: CWForecasterRequestValueDescription | CWForecasterRequestValueTemperature];
     
     void(^forecastRequestResponseBlock)(PCHTTPResponse *) = ^(PCHTTPResponse *response)
     {
         if (completion)
         {
-            completion([weatherBugClient hourlyForecastsForResponse: response]);
+            completion([weatherClient hourlyForecastsForResponse: response]);
         }
     };
     
-    [PCHTTPClient get: [weatherBugClient url]
+    [PCHTTPClient get: [weatherClient url]
            parameters: forecastRequestParameters
       responseHandler: forecastRequestResponseBlock];
 }

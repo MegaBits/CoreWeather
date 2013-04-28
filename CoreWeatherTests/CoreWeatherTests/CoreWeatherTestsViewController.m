@@ -7,8 +7,8 @@
 //
 
 #import "CoreWeatherTestsViewController.h"
-#import "NSDate+CWSunPositions.h"
 #import <CoreLocation/CoreLocation.h>
+#import "CoreWeather.h"
 
 @interface CoreWeatherTestsViewController ()
 
@@ -22,8 +22,11 @@
     
     CLLocation *loc = [[CLLocation alloc] initWithLatitude: 40.4547330
                                                  longitude: -79.982208];
-    NSLog(@"%@", [[NSDate date] sunriseTimeAtLocation: loc]);
-    NSLog(@"%@", [[NSDate date] sunsetTimeAtLocation: loc]);
+    
+    [CWForecaster setAPIKey: @"cyjevzbjacc3nhd2yh632cxy"];
+    [CWForecaster dailyForecastsForLocation: loc forNumberOfDays: 2 completion:^(NSArray *forecasts) {
+        NSLog(@"%@", forecasts);
+    }];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

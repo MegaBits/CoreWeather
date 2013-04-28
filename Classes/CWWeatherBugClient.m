@@ -177,7 +177,6 @@ static CWForecastCondition CWWeatherBugClientConditionForDescription(NSString *d
 @implementation CWWeatherBugClient
 
 #pragma mark - Properties
-@synthesize apiKey;
 @synthesize requestParametersByHash;
 
 #pragma mark - Initializers
@@ -187,7 +186,7 @@ static CWForecastCondition CWWeatherBugClientConditionForDescription(NSString *d
     if (!self)
         return nil;
     
-    apiKey = anAPIKey;
+    [self setAPIKey: anAPIKey];
     requestParametersByHash = [NSMutableDictionary dictionary];
     
     return self;
@@ -225,7 +224,7 @@ static CWForecastCondition CWWeatherBugClientConditionForDescription(NSString *d
         CWWeatherBugClientRequestNumberOfDaysKey:   @(numberOfDays),
         CWWeatherBugClientRequestNumberOfHoursKey:  @(numberOfHours),
         CWWeatherBugClientRequestValueKey:          requestValuesString,
-        CWWeatherBugClientRequestAPIKeyKey:         apiKey
+        CWWeatherBugClientRequestAPIKeyKey:         [self apiKey]
     } mutableCopy];
     [requestParameters setObject: [[requestParameters description] md5Hash]
                           forKey: CWWeatherBugClientRequestHashKey];
