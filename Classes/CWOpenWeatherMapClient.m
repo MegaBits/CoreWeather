@@ -160,6 +160,9 @@ CWForecastCondition CWOpenWeatherMapClientConditionForID(NSInteger weatherID)
 
 - (NSArray *)dailyForecastsForResponse:(PCHTTPResponse *)response
 {
+    if (![response data])
+        return nil;
+    
     NSMutableArray *responseForecasts = [[[response object] objectForKey: CWOpenWeatherMapClientResponseForecastListKey] mutableCopy];
     NSDictionary *requestParameters = CWOpenWeatherMapClientParameterDictionaryFromURL([response requestURL]);
     
@@ -206,6 +209,9 @@ CWForecastCondition CWOpenWeatherMapClientConditionForID(NSInteger weatherID)
 
 - (NSArray *)hourlyForecastsForResponse:(PCHTTPResponse *)response
 {
+    if (![response data])
+        return nil;
+    
     NSMutableArray *responseForecasts = [[[response object] objectForKey: CWOpenWeatherMapClientResponseForecastListKey] mutableCopy];
     NSDictionary *requestParameters = CWOpenWeatherMapClientParameterDictionaryFromURL([response requestURL]);
     
