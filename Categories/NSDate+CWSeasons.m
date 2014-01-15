@@ -28,15 +28,19 @@ typedef enum
     {
         case CWWinterSeason:
             startMonth = CWSeasonsStartMonthOfWinterSeason;
+            break;
             
         case CWSpringSeason:
             startMonth = CWSeasonsStartMonthOfSpringSeason;
+            break;
             
         case CWSummerSeason:
             startMonth = CWSeasonsStartMonthOfSummerSeason;
+            break;
             
         case CWAutumnSeason:
             startMonth = CWSeasonsStartMonthOfAutumnSeason;
+            break;
     }
     
     NSDateComponents *averageStartDateComponents = [[NSDateComponents alloc] init];
