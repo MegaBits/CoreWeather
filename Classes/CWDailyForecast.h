@@ -31,6 +31,16 @@
  */
 @property (nonatomic, readonly) CGFloat celciusLowTemperature;
 
+/*!
+    This day's forecasted high wind speed in km/h
+ */
+@property (nonatomic, readonly) CGFloat windSpeedHigh;
+
+/*!
+ This day's forecasted low wind speed in km/h
+ */
+@property (nonatomic, readonly) CGFloat windSpeedLow;
+
 #pragma mark - Initializers
 /*!
     Returns a CWDailyForecast object initialized with the given parameters.
@@ -42,7 +52,7 @@
     @param endDate The date and time on which the receiver ends.
     @return A CWDailyForecast object initialized with the given parameters.
  */
-- (id)initWithCondition:(CWForecastCondition)condition fahrenheitHighTemperature:(CGFloat)highTemperature andLowTemperature:(CGFloat)lowTemperature forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate;
+- (id)initWithCondition:(CWForecastCondition)condition fahrenheitHighTemperature:(CGFloat)highTemperature andLowTemperature:(CGFloat)lowTemperature highWindSpeed:(CGFloat)windSpeedHigh lowWindSpeed:(CGFloat)windSpeedLow forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate;
 
 /*!
     Returns a CWDailyForecast object initialized with the given parameters.
@@ -54,7 +64,7 @@
     @param endDate The date and time on which the receiver ends.
     @return A CWDailyForecast object initialized with the given parameters.
  */
-- (id)initWithCondition:(CWForecastCondition)condition celciusHighTemperature:(CGFloat)highTemperature andLowTemperature:(CGFloat)lowTemperature forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate;
+- (id)initWithCondition:(CWForecastCondition)condition celciusHighTemperature:(CGFloat)highTemperature andLowTemperature:(CGFloat)lowTemperature highWindSpeed:(CGFloat)windSpeedHigh lowWindSpeed:(CGFloat)windSpeedLow forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate;
 
 #pragma mark - Accessors
 /*!

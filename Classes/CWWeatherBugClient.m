@@ -260,9 +260,12 @@ static CWForecastCondition CWWeatherBugClientConditionForDescription(NSString *d
         NSDate *startDate = [NSDate dateWithTimeIntervalSinceNow: (60 * 60 * 24 * dayIndex)];
         NSDate *endDate = [NSDate dateWithTimeIntervalSinceNow: (60 * 60 * 24 * (dayIndex + 1))];
         
+        #warning Wind Speed not yet supported for Weather Bug
         CWDailyForecast *forecast = [[CWDailyForecast alloc] initWithCondition: condition
                                                      fahrenheitHighTemperature: highTemperature
                                                              andLowTemperature: lowTemperature
+                                                                 highWindSpeed: -1
+                                                                  lowWindSpeed: -1
                                                                    forLocation: location
                                                                    onStartDate: startDate
                                                                 throughEndDate: endDate];
@@ -298,8 +301,10 @@ static CWForecastCondition CWWeatherBugClientConditionForDescription(NSString *d
         NSDate *startDate = [NSDate dateWithTimeIntervalSinceNow: (60 * 60 * hourIndex)];
         NSDate *endDate = [NSDate dateWithTimeIntervalSinceNow: (60 * 60 * (hourIndex + 1))];
         
+        #warning Wind Speed not yet supported for Weather Bug
         CWHourlyForecast *forecast = [[CWHourlyForecast alloc] initWithCondition: condition
                                                            fahrenheitTemperature: temperature
+                                                                       windSpeed: -1
                                                                      forLocation: location
                                                                      onStartDate: startDate
                                                                   throughEndDate: endDate];

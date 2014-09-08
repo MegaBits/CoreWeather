@@ -30,6 +30,8 @@ NSString *const CWOpenWeatherMapClientResponseForecastHighTemperatureKey = @"tem
 NSString *const CWOpenWeatherMapClientResponseForecastWeatherKey = @"weather";
 NSString *const CWOpenWeatherMapClientResponseForecastWeatherIDKey = @"id";
 NSString *const CWOpenWeatherMapClientResponseForecastDateTimeKey = @"dt";
+NSString *const CWOpenWeatherMapClientResponseForecastWindKey = @"wind";
+NSString *const CWOpenWeatherMapClientResponseForecastWindSpeedKey = @"speed";
 NSInteger const CWOpenWeatherMapClientNumberOfHoursPerForecastListing = 3;
 
 #pragma mark - Internal Functions
@@ -192,9 +194,13 @@ CWForecastCondition CWOpenWeatherMapClientConditionForID(NSInteger weatherID)
             NSNumber *dailyForecastWeatherID = [[[hourlyForecast objectForKey: CWOpenWeatherMapClientResponseForecastWeatherKey] objectAtIndex: 0] objectForKey: CWOpenWeatherMapClientResponseForecastWeatherIDKey];
             CWForecastCondition forecastCondition = CWOpenWeatherMapClientConditionForID([dailyForecastWeatherID integerValue]);
             
+            NSNumber *dailyForecastWindSpeed = [[hourlyForecast objectForKey: CWOpenWeatherMapClientResponseForecastWindKey] objectForKey: CWOpenWeatherMapClientResponseForecastWindSpeedKey];
+            
             CWDailyForecast *forecast = [[CWDailyForecast alloc] initWithCondition: forecastCondition
                                                          fahrenheitHighTemperature: [dailyForecastHighTemperature floatValue]
                                                                  andLowTemperature: [dailyForecastLowTemperature floatValue]
+                                                                     highWindSpeed: [dailyForecastWindSpeed floatValue] // No wind speed variance given for OpenWeatherMap
+                                                                      lowWindSpeed: [dailyForecastWindSpeed floatValue]
                                                                        forLocation: dailyForecastLocation
                                                                        onStartDate: startDate
                                                                     throughEndDate: endDate];
@@ -236,8 +242,11 @@ CWForecastCondition CWOpenWeatherMapClientConditionForID(NSInteger weatherID)
             NSDate *startDate = [NSDate dateWithTimeIntervalSince1970: [startDateTimestamp floatValue] + defaultTimeZoneOffset];
             NSDate *endDate = [startDate dateByAddingTimeInterval: ((60 * 60) + defaultTimeZoneOffset)];
             
+            NSNumber *hourlyForecastWindSpeed = [[hourlyForecast objectForKey: CWOpenWeatherMapClientResponseForecastWindKey] objectForKey: CWOpenWeatherMapClientResponseForecastWindSpeedKey];
+            
             CWHourlyForecast *forecast = [[CWHourlyForecast alloc] initWithCondition: forecastCondition
                                                                fahrenheitTemperature: [hourlyForecastTemperature floatValue]
+                                                                           windSpeed: [hourlyForecastWindSpeed floatValue]
                                                                          forLocation: hourlyForecastLocation
                                                                          onStartDate: startDate
                                                                       throughEndDate: endDate];

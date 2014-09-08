@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CoreWeather"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Weather API for Objective-C"
   s.homepage     = "https://github.com/MegaBits/CoreWeather"
 
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.source       = {
       :git => "https://github.com/MegaBits/CoreWeather.git",
-      :tag => "v1.0.0"
+      :tag => "v1.0.1"
   }
 
   # s.source_files  = 'Classes', 'Classes/**/*.{h,m}'

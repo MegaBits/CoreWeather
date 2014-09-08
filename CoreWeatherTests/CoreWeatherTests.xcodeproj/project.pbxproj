@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7343E2F8172CC37E00C683E9 /* CLLocation+SunriseSunset.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E2F6172CC37E00C683E9 /* CLLocation+SunriseSunset.m */; };
-		7343E337172CC4CA00C683E9 /* PCHTTPBatchClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E2FF172CC4CA00C683E9 /* PCHTTPBatchClient.m */; };
-		7343E338172CC4CA00C683E9 /* PCHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E301172CC4CA00C683E9 /* PCHTTPClient.m */; };
-		7343E339172CC4CA00C683E9 /* PCHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E303172CC4CA00C683E9 /* PCHTTPResponse.m */; };
-		7343E33A172CC4CA00C683E9 /* PCHTTPSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E305172CC4CA00C683E9 /* PCHTTPSerializer.m */; };
+		7326571B19BE309100F3C364 /* CLLocation+SunriseSunset.m in Sources */ = {isa = PBXBuildFile; fileRef = 732656DD19BE309100F3C364 /* CLLocation+SunriseSunset.m */; };
+		7326571E19BE309100F3C364 /* PCHTTPBatchClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 732656E419BE309100F3C364 /* PCHTTPBatchClient.m */; };
+		7326571F19BE309100F3C364 /* PCHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 732656E619BE309100F3C364 /* PCHTTPClient.m */; };
+		7326572019BE309100F3C364 /* PCHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 732656E819BE309100F3C364 /* PCHTTPResponse.m */; };
+		7326572119BE309100F3C364 /* PCHTTPSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 732656EA19BE309100F3C364 /* PCHTTPSerializer.m */; };
 		7343E359172CC87700C683E9 /* CWClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7343E358172CC87700C683E9 /* CWClient.m */; };
 		736630A8172D73C900BE4DCF /* NSDate+CWSeasons.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415F416D493BB00C6CDDF /* NSDate+CWSeasons.m */; };
 		736630A9172D73C900BE4DCF /* NSString+CWHashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 737415F616D493BB00C6CDDF /* NSString+CWHashing.m */; };
@@ -36,17 +36,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7343E2F5172CC37E00C683E9 /* CLLocation+SunriseSunset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+SunriseSunset.h"; sourceTree = "<group>"; };
-		7343E2F6172CC37E00C683E9 /* CLLocation+SunriseSunset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+SunriseSunset.m"; sourceTree = "<group>"; };
-		7343E2FD172CC4CA00C683E9 /* PCHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTP.h; sourceTree = "<group>"; };
-		7343E2FE172CC4CA00C683E9 /* PCHTTPBatchClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPBatchClient.h; sourceTree = "<group>"; };
-		7343E2FF172CC4CA00C683E9 /* PCHTTPBatchClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPBatchClient.m; sourceTree = "<group>"; };
-		7343E300172CC4CA00C683E9 /* PCHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPClient.h; sourceTree = "<group>"; };
-		7343E301172CC4CA00C683E9 /* PCHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPClient.m; sourceTree = "<group>"; };
-		7343E302172CC4CA00C683E9 /* PCHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPResponse.h; sourceTree = "<group>"; };
-		7343E303172CC4CA00C683E9 /* PCHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPResponse.m; sourceTree = "<group>"; };
-		7343E304172CC4CA00C683E9 /* PCHTTPSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPSerializer.h; sourceTree = "<group>"; };
-		7343E305172CC4CA00C683E9 /* PCHTTPSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPSerializer.m; sourceTree = "<group>"; };
+		732656DC19BE309100F3C364 /* CLLocation+SunriseSunset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+SunriseSunset.h"; sourceTree = "<group>"; };
+		732656DD19BE309100F3C364 /* CLLocation+SunriseSunset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+SunriseSunset.m"; sourceTree = "<group>"; };
+		732656E219BE309100F3C364 /* PCHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTP.h; sourceTree = "<group>"; };
+		732656E319BE309100F3C364 /* PCHTTPBatchClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPBatchClient.h; sourceTree = "<group>"; };
+		732656E419BE309100F3C364 /* PCHTTPBatchClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPBatchClient.m; sourceTree = "<group>"; };
+		732656E519BE309100F3C364 /* PCHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPClient.h; sourceTree = "<group>"; };
+		732656E619BE309100F3C364 /* PCHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPClient.m; sourceTree = "<group>"; };
+		732656E719BE309100F3C364 /* PCHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPResponse.h; sourceTree = "<group>"; };
+		732656E819BE309100F3C364 /* PCHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPResponse.m; sourceTree = "<group>"; };
+		732656E919BE309100F3C364 /* PCHTTPSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCHTTPSerializer.h; sourceTree = "<group>"; };
+		732656EA19BE309100F3C364 /* PCHTTPSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCHTTPSerializer.m; sourceTree = "<group>"; };
 		7343E357172CC87700C683E9 /* CWClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWClient.h; sourceTree = "<group>"; };
 		7343E358172CC87700C683E9 /* CWClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWClient.m; sourceTree = "<group>"; };
 		736630AF172D754800BE4DCF /* CWOpenWeatherMapClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWOpenWeatherMapClient.h; sourceTree = "<group>"; };
@@ -100,45 +100,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7343E2F3172CC37E00C683E9 /* Dependencies */ = {
+		732656DA19BE309100F3C364 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				7343E2FA172CC4CA00C683E9 /* PCHTTP */,
-				7343E2F4172CC37E00C683E9 /* CLLocation-SunriseSunset */,
+				732656DB19BE309100F3C364 /* CLLocation-SunriseSunset */,
+				732656DF19BE309100F3C364 /* PCHTTP */,
 			);
 			name = Dependencies;
 			path = ../Dependencies;
 			sourceTree = "<group>";
 		};
-		7343E2F4172CC37E00C683E9 /* CLLocation-SunriseSunset */ = {
+		732656DB19BE309100F3C364 /* CLLocation-SunriseSunset */ = {
 			isa = PBXGroup;
 			children = (
-				7343E2F5172CC37E00C683E9 /* CLLocation+SunriseSunset.h */,
-				7343E2F6172CC37E00C683E9 /* CLLocation+SunriseSunset.m */,
+				732656DC19BE309100F3C364 /* CLLocation+SunriseSunset.h */,
+				732656DD19BE309100F3C364 /* CLLocation+SunriseSunset.m */,
 			);
 			path = "CLLocation-SunriseSunset";
 			sourceTree = "<group>";
 		};
-		7343E2FA172CC4CA00C683E9 /* PCHTTP */ = {
+		732656DF19BE309100F3C364 /* PCHTTP */ = {
 			isa = PBXGroup;
 			children = (
-				7343E2FC172CC4CA00C683E9 /* PCHTTP */,
+				732656E119BE309100F3C364 /* PCHTTP */,
 			);
 			path = PCHTTP;
 			sourceTree = "<group>";
 		};
-		7343E2FC172CC4CA00C683E9 /* PCHTTP */ = {
+		732656E119BE309100F3C364 /* PCHTTP */ = {
 			isa = PBXGroup;
 			children = (
-				7343E2FD172CC4CA00C683E9 /* PCHTTP.h */,
-				7343E2FE172CC4CA00C683E9 /* PCHTTPBatchClient.h */,
-				7343E2FF172CC4CA00C683E9 /* PCHTTPBatchClient.m */,
-				7343E300172CC4CA00C683E9 /* PCHTTPClient.h */,
-				7343E301172CC4CA00C683E9 /* PCHTTPClient.m */,
-				7343E302172CC4CA00C683E9 /* PCHTTPResponse.h */,
-				7343E303172CC4CA00C683E9 /* PCHTTPResponse.m */,
-				7343E304172CC4CA00C683E9 /* PCHTTPSerializer.h */,
-				7343E305172CC4CA00C683E9 /* PCHTTPSerializer.m */,
+				732656E219BE309100F3C364 /* PCHTTP.h */,
+				732656E319BE309100F3C364 /* PCHTTPBatchClient.h */,
+				732656E419BE309100F3C364 /* PCHTTPBatchClient.m */,
+				732656E519BE309100F3C364 /* PCHTTPClient.h */,
+				732656E619BE309100F3C364 /* PCHTTPClient.m */,
+				732656E719BE309100F3C364 /* PCHTTPResponse.h */,
+				732656E819BE309100F3C364 /* PCHTTPResponse.m */,
+				732656E919BE309100F3C364 /* PCHTTPSerializer.h */,
+				732656EA19BE309100F3C364 /* PCHTTPSerializer.m */,
 			);
 			path = PCHTTP;
 			sourceTree = "<group>";
@@ -146,8 +146,8 @@
 		737415C316D4934C00C6CDDF = {
 			isa = PBXGroup;
 			children = (
+				732656DA19BE309100F3C364 /* Dependencies */,
 				7374160F16D4A36000C6CDDF /* CoreLocation.framework */,
-				7343E2F3172CC37E00C683E9 /* Dependencies */,
 				737415F216D493BB00C6CDDF /* Categories */,
 				737415F716D493BB00C6CDDF /* Classes */,
 				7374160216D493BB00C6CDDF /* CoreWeather.h */,
@@ -303,22 +303,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7326572119BE309100F3C364 /* PCHTTPSerializer.m in Sources */,
+				7326571E19BE309100F3C364 /* PCHTTPBatchClient.m in Sources */,
 				737415DC16D4934C00C6CDDF /* main.m in Sources */,
 				737415E016D4934C00C6CDDF /* CoreWeatherTestsAppDelegate.m in Sources */,
 				737415E916D4934C00C6CDDF /* CoreWeatherTestsViewController.m in Sources */,
-				7343E2F8172CC37E00C683E9 /* CLLocation+SunriseSunset.m in Sources */,
-				7343E337172CC4CA00C683E9 /* PCHTTPBatchClient.m in Sources */,
-				7343E338172CC4CA00C683E9 /* PCHTTPClient.m in Sources */,
-				7343E339172CC4CA00C683E9 /* PCHTTPResponse.m in Sources */,
-				7343E33A172CC4CA00C683E9 /* PCHTTPSerializer.m in Sources */,
 				7343E359172CC87700C683E9 /* CWClient.m in Sources */,
 				736630A8172D73C900BE4DCF /* NSDate+CWSeasons.m in Sources */,
 				736630A9172D73C900BE4DCF /* NSString+CWHashing.m in Sources */,
 				736630AA172D73DC00BE4DCF /* CWDailyForecast.m in Sources */,
 				736630AB172D73DC00BE4DCF /* CWForecast.m in Sources */,
+				7326571B19BE309100F3C364 /* CLLocation+SunriseSunset.m in Sources */,
 				736630AC172D73DC00BE4DCF /* CWForecaster.m in Sources */,
+				7326571F19BE309100F3C364 /* PCHTTPClient.m in Sources */,
 				736630AD172D73DC00BE4DCF /* CWHourlyForecast.m in Sources */,
 				736630AE172D73DC00BE4DCF /* CWWeatherBugClient.m in Sources */,
+				7326572019BE309100F3C364 /* PCHTTPResponse.m in Sources */,
 				736630B1172D754800BE4DCF /* CWOpenWeatherMapClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

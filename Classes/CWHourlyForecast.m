@@ -22,7 +22,7 @@
 @synthesize fahrenheitTemperature;
 
 #pragma mark - Initializers
-- (id)initWithCondition:(CWForecastCondition)condition fahrenheitTemperature:(CGFloat)temperature forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate
+- (id)initWithCondition:(CWForecastCondition)condition fahrenheitTemperature:(CGFloat)temperature windSpeed:(CGFloat)windSpeed forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate
 {
     self = [super initWithCondition: condition
                         forLocation: location
@@ -32,16 +32,18 @@
         return nil;
     
     fahrenheitTemperature = temperature;
+    _windSpeed = CWKPHSpeedForMPSSpeed(windSpeed);
     
     return self;
 }
 
-- (id)initWithCondition:(CWForecastCondition)condition celciusTemperature:(CGFloat)temperature forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate
+- (id)initWithCondition:(CWForecastCondition)condition celciusTemperature:(CGFloat)temperature windSpeed:(CGFloat)windSpeed forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate
 {
     temperature = CWFahrenheitForCelciusTemperature(temperature);
     
     self = [self initWithCondition: condition
              fahrenheitTemperature: temperature
+                         windSpeed: windSpeed
                        forLocation: location
                        onStartDate: startDate
                     throughEndDate: endDate];
@@ -68,10 +70,11 @@
 
 - (NSString *)description
 {
-    NSString *description = [NSString stringWithFormat: @"%@ to %@: Temperature: %f. Condition: %@.",
+    NSString *description = [NSString stringWithFormat: @"%@ to %@: Temperature: %f F. Winds: %f km/h. Condition: %@.",
         [self startDate],
         [self endDate],
         [self fahrenheitTemperature],
+        self.windSpeed,
         NSStringFromCWForecastCondition([self condition])
     ];
     

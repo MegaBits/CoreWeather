@@ -24,7 +24,7 @@
 @synthesize fahrenheitLowTemperature;
 
 #pragma mark - Initializers
-- (id)initWithCondition:(CWForecastCondition)condition fahrenheitHighTemperature:(CGFloat)highTemperature andLowTemperature:(CGFloat)lowTemperature forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate
+- (id)initWithCondition:(CWForecastCondition)condition fahrenheitHighTemperature:(CGFloat)highTemperature andLowTemperature:(CGFloat)lowTemperature highWindSpeed:(CGFloat)windSpeedHigh lowWindSpeed:(CGFloat)windSpeedLow forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate
 {
     self = [super initWithCondition: condition
                         forLocation: location
@@ -36,10 +36,13 @@
     fahrenheitHighTemperature = highTemperature;
     fahrenheitLowTemperature = lowTemperature;
     
+    _windSpeedHigh = CWKPHSpeedForMPSSpeed(windSpeedHigh);
+    _windSpeedLow = CWKPHSpeedForMPSSpeed(windSpeedLow);
+    
     return self;
 }
 
-- (id)initWithCondition:(CWForecastCondition)condition celciusHighTemperature:(CGFloat)highTemperature andLowTemperature:(CGFloat)lowTemperature forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate
+- (id)initWithCondition:(CWForecastCondition)condition celciusHighTemperature:(CGFloat)highTemperature andLowTemperature:(CGFloat)lowTemperature highWindSpeed:(CGFloat)windSpeedHigh lowWindSpeed:(CGFloat)windSpeedLow forLocation:(CLLocation *)location onStartDate:(NSDate *)startDate throughEndDate:(NSDate *)endDate
 {
     highTemperature = CWFahrenheitForCelciusTemperature(highTemperature);
     lowTemperature = CWFahrenheitForCelciusTemperature(lowTemperature);
@@ -47,6 +50,8 @@
     self = [self initWithCondition: condition
          fahrenheitHighTemperature: highTemperature
                  andLowTemperature: lowTemperature
+                     highWindSpeed: windSpeedHigh
+                      lowWindSpeed: windSpeedLow
                        forLocation: location
                        onStartDate: startDate
                     throughEndDate: endDate];
@@ -90,11 +95,13 @@
 
 - (NSString *)description
 {
-    NSString *description = [NSString stringWithFormat: @"%@ to %@: High: %f. Low: %f. Condition: %@.",
+    NSString *description = [NSString stringWithFormat: @"%@ to %@: High: %f F. Low: %f F. Winds %f to %f km/h. Condition: %@.",
         [self startDate],
         [self endDate],
         [self fahrenheitHighTemperature],
         [self fahrenheitLowTemperature],
+        self.windSpeedLow,
+        self.windSpeedHigh,
         NSStringFromCWForecastCondition([self condition])
     ];
     

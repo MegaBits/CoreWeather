@@ -10,6 +10,7 @@
 #import "CoreWeather.h"
 #import "CWClient.h"
 #import "CWOpenWeatherMapClient.h"
+#import "PCHTTP.h"
 
 #pragma mark - Globals
 static CWClient *weatherClient;
