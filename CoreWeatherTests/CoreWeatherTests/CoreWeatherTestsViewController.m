@@ -27,6 +27,10 @@
     [CWForecaster dailyForecastsForLocation: loc forNumberOfDays: 2 completion:^(NSArray *forecasts) {
         NSLog(@"%@", forecasts);
     }];
+    
+    [CWForecaster hourlyForecastsForLocation: loc forNumberOfHours: 1 completion:^(NSArray *forecasts) {
+        NSLog(@"%@", forecasts);
+    }];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

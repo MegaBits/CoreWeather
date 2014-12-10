@@ -47,3 +47,12 @@ static CGFloat CWCelciusForFahrenheitTemperature(CGFloat fahrenheitTemperature)
 static CGFloat CWKPHSpeedForMPSSpeed(CGFloat mpsSpeed) {
     return mpsSpeed * (3600.0) * (1.0 / 1000.0);
 }
+
+/*!
+ Returns the mps speed for the given km/h speed.
+ @param kphSpeed A speed in mps.
+ @return The mps speed for the given km/h speed.
+ */
+static CGFloat CWMPSSpeedForKPHSpeed(CGFloat kphSpeed) {
+    return kphSpeed / (3600.0) / (1.0 / 1000.0);
+}

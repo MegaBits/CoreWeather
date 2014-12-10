@@ -8,6 +8,8 @@
 
 #import "CWClient.h"
 
+// This OpenWeatherMap client is only tuned to return the current weather.
+// For additional forecast information, use another service provider.
 @interface CWOpenWeatherMapClient : CWClient
 
 @end
